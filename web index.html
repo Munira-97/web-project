@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Site</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="webs.css">
+
+    <script src="webst.js"></script>
+
+</head>
+<body>
+        <div class="top-bar d-flex">
+            <p class="text-muted"><b>Free Delivery Over 3000</b></p>
+
+            <span class=" ml-auto my-auto" style="justify-content: space-around;">
+                <a class="fb ml-2" href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a class="insta ml-2" href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a class="email ml-2" href="#"><ion-icon name="mail-outline"></ion-icon></a>
+                <a class="git ml-2" href="#"><ion-icon name="logo-github"></ion-icon></a>
+            
+            </span>
+
+        </div>
+
+    
+        
+        <div class="border">
+            <div class="abc">
+               <!--
+                <div style="font-size: 40px;" class="my-auto">
+                    
+                    <ion-icon name="menu-outline" ></ion-icon>
+                </div>
+               --> 
+
+                             
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn"  onclick="closeNav()">&times;</a>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+
+                <!-- open the sidenav -->
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+
+
+
+ 
+                <form style="margin-left: 10px;">
+                    <input class="srch_in" type="text" placeholder="Searech">
+                    <button id="srch" type="submit" aria-hidden="true"><ion-icon name="search-outline"></ion-icon></button>
+                </form>
+                
+            <div class="ml-2">
+                <a id="shop" class="text-muted" style="font-size: 20px;  margin-left: 10px;" href="#">SHOP
+                    <span><ion-icon name="caret-down-outline"></ion-icon></span>
+                   </a>
+    
+            </div>
+    
+            <div  >
+
+                <button  class="text-muted" style="font-size: 20px; margin-left: 10px; border: none; background: none;"  type="button" onclick="scrlvw()">BLOG
+                
+                    <span><ion-icon name="caret-down-outline"></ion-icon></span>
+                </button>
+            </div>
+    
+            <!--brand logo-->
+    
+            <img class="mx-auto" id="logo" src="boho-s-removebg-preview.png" alt="">
+    
+            <div class="d-flex ml-auto">
+                
+        
+                <div class="mr-1">
+                    <a id="cart"  class="text-muted" style="font-size: 20px; margin-right: 10px;" href="#">CART 
+                    <span><ion-icon name="cart-outline"></ion-icon></span>
+                    </a>
+                </div>
+            </div>
+            <hr>
+    
+            </div>
+    
+    
+    
+            <!--webp-->
+            <div class="mac_bc card-body">
+              <!--
+                 <h1 id="shop-name">Boho Decor Studio</h1> 
+    
+              <h1 style="color: white;">FIND YOUR DESIRE MACRAME</h1>
+    
+              --> 
+             
+                <div class="container " >
+               
+                      <div class="row " style="margin-top: 30%;">
+                           <div class="col-2"></div>
+                           <div class="col-8 text-center ">
+                              <h2  id="shop-name">Boho Decor Studio</h2> 
+                              <h1 id="fnd-mac" >FIND YOUR DESIRE MACRAME</h1>
+                           </div>
+                            <div class="col-4"></div>
+    
+                        </div>
+                     
+                    
+    
+    
+                        <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+                            <div class="category " >
+                                
+                                <a  id="wall" class="btn border" href="mac wall.html">MACRAME WALL HANGING</a>
+            
+                                <a  id="plant" class="btn border" href="mac plant.html">MACRAME PLANT HANGER</a>
+            
+                                <a  id="bags" class="btn border" href="mac bag.html">MACRAME BAGS</a>
+            
+                                <a  id="swing" class="btn border" href="mac swing.html">MACRAME SWINGS</a>
+            
+                            </div>
+                        </div>
+                   
+    
+    
+                </div>
+            </div>
+    
+    
+         
+    
+        </div>
+            
+    
+    
+        <!--blog-->
+    
+        <div class="card-body blg-backgd" id="blga">
+            
+            <h1 id="blgtxt">Blog Site</h1>
+            <div class="blgi-div text-center mt-4">
+                <img src="mac_blg.jpg" height="400px" width="320px">
+            </div>
+    
+            <div class=" d-flex mt-4" style="justify-content: center;">
+                <a href="blogsite.html" class="blg-btn btn border">Click Here</a>
+               
+            </div>
+    
+            <!--toggle korle hbe na link kore dite hbe-->
+            
+          
+        </div>
+    
+    
+        
+    
+        <!--mac categories-->
+        <div class="card-body">
+            <h1 class="text-center mac-catxt">MACRAME CATEGORIES</h1>
+    
+            <div class="imgbody">
+    
+            </div>
+    
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide">
+                        <img class="imgd" src="im-1.jpg" >
+                    </div>
+    
+                    <div class="slide">
+                        <img class="imgd" src="im-2.jpg" >
+                    </div>
+    
+                    <div class="slide">
+                        <img class="imgd" src="im-3.jpg" >
+                    </div>
+    
+                    <div class="slide">
+                        <img class="imgd" src="im-4.jpg" >
+                    </div>
+    
+                    <div class="slide">
+                        <img class="imgd" src="im-5.jpg" >
+                    </div>
+    
+                    <div class="slide">
+                        <img class="imgd" src="im-6.jpg" >
+                    </div>
+    
+                    <div class="slide">
+                        <img class="imgd" src="im-7.jpg" >
+                    </div>
+    
+                    <div class="slide">
+                        <img class="imgd" src="im-8.jpg" >
+                    </div>
+    
+                    <div class="slide">
+                        <img class="imgd" src="im-9.jpg" >
+                    </div>
+    
+                    <div class="slide">
+                        <img class="imgd" src="im-10.jpg" >
+                    </div>
+    
+                    <div class="slide">
+                        <img class="imgd" src="im-11.jpg" >
+                    </div>
+    
+                    <div class="slide">
+                        <img class="imgd" src="im-12.jpg" >
+                    </div>
+    
+                    <div class="slide">
+                        <img class="imgd" src="im-13.jpg" >
+                    </div>
+    
+                    <div class="slide">
+                        <img class="imgd" src="im-14.jpg" >
+                    </div>
+    
+                    <div class="slide">
+                        <img class="imgd" src="im-15.jpg" >
+                    </div>
+    
+    
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+        <!--Macrame products sale-->
+    
+        <div class="card-body">
+    
+            <div style="background-color: navajowhite; text-align: center;  font-family: 'Times New Roman', Times, serif;">
+                <h1><marquee>MACRAME PRODUCTS ON SALE</marquee></h1>
+           </div>
+            <div class="parent">
+               
+    
+               <div class="childtag1">
+                    <div class="childtag2">
+                       <div class="imgbody">
+                        <img class="img1" src="im-7.jpg" width="60%" height="180px">
+                       </div>
+                        <div class="img2">
+                            <p class="text-muted">Macrame Wall Hanger</p>
+                            <h6>Macrame Wall Hanger| Wall Decor</h6>
+                            <del class="text-muted">3000 BDT</del>
+                            <b  style="color: rgb(52, 172, 28);">2500 BDT<button class="addbtn ml-4" >Add To Cart</button></b>
+                        </div>
+                    </div>
+    
+                    <div class="childtag2">
+                        <div class="imgbody">
+                         <img class="img1" src="pic_j.jpg" width="60%" height="180px">
+                        </div>
+                         <div class="img2">
+                             <p class="text-muted">Macrame Bag</p>
+                             <h6>Macrame Bag| Stylish Handmade Bag</h6>
+                             <del class="text-muted">1200 BDT</del>
+                             <b  style="color: rgb(52, 172, 28);">999 BDT<button class="addbtn ml-4" >Add To Cart</button></b>
+                         </div>
+                     </div>
+    
+                     <div class="childtag2">
+                        <div class="imgbody">
+                         <img class="img1" src="pic_a.jpg" width="60%" height="180px">
+                        </div>
+                         <div class="img2">
+                             <p class="text-muted">Macrame Shelf</p>
+                             <h6>Macrame Shelf| Wooden Shelf </h6>
+                             <del class="text-muted">1000 BDT</del>
+                             <b  style="color: rgb(52, 172, 28);">800 BDT<button class="addbtn ml-4" >Add To Cart</button></b>
+                         </div>
+                     </div>
+    
+                     <div class="childtag2">
+                        <div class="imgbody">
+                         <img class="img1" src="pic_e.jpg" width="60%" height="180px">
+                        </div>
+                         <div class="img2">
+                             <p class="text-muted">Macrame Plant Hanger</p>
+                             <h6>Jute Plant Hanger</h6>
+                             <del class="text-muted">200 BDT</del>
+                             <b  style="color: rgb(52, 172, 28);">120 BDT<button class="addbtn ml-4" >Add To Cart</button></b>
+                         </div>
+                     </div>
+    
+                     <div class="childtag2">
+                        <div class="imgbody">
+                         <img class="img1" src="pic_l.jpg" width="60%" height="180px">
+                        </div>
+                         <div class="img2">
+                             <p class="text-muted">Macrame Bag</p>
+                             <h6>Macrame Bag| Stylish Handmade Bag</h6>
+                             <del class="text-muted">1200 BDT</del>
+                             <b  style="color: rgb(52, 172, 28);">999 BDT<button class="addbtn ml-4" >Add To Cart</button></b>
+                         </div>
+                     </div>
+    
+                    
+    
+                     <div class="childtag2">
+                        <div class="imgbody">
+                         <img class="img1" src="pic_m.jpg" width="60%" height="180px">
+                        </div>
+                         <div class="img2">
+                             <p class="text-muted">Macrame Plant Hanger</p>
+                             <h6>Macrame Plant Hanger| Color White</h6>
+                             <del class="text-muted">200 BDT</del>
+                             <b  style="color: rgb(52, 172, 28);">150 BDT<button class="addbtn ml-4" >Add To Cart</button></b>
+                         </div>
+                     </div>
+    
+                    
+    
+                     <div class="childtag2">
+                        <div class="imgbody">
+                         <img class="img1" src="pic_n.jpg" width="60%" height="180px">
+                        </div>
+                         <div class="img2">
+                             <p class="text-muted">Macrame Plant Hanger</p>
+                             <h6>Macrame Plant Hanger| Colorfull Plant Hanger</h6>
+                             <del class="text-muted">200 BDT</del>
+                             <b  style="color: rgb(52, 172, 28);">150 BDT<button class="addbtn ml-4" >Add To Cart</button></b>
+                         </div>
+                     </div>
+    
+                     <div class="childtag2">
+                        <div class="imgbody">
+                         <img class="img1" src="s4.jpg" width="60%" height="180px">
+                        </div>
+                         <div class="img2">
+                             <p class="text-muted">Macrame Shelf</p>
+                             <h6>Macrame Shelf| 3 Wooden Shelf</h6>
+                             <del class="text-muted">2000 BDT</del>
+                             <b  style="color: rgb(52, 172, 28);">1800 BDT<button class="addbtn ml-4" >Add To Cart</button></b>
+                         </div>
+                     </div>
+    
+                     <div class="childtag2">
+                        <div class="imgbody">
+                         <img class="img1" src="pic mr.jpg" width="60%" height="180px">
+                        </div>
+                         <div class="img2">
+                             <p class="text-muted">Macrame Mirror</p>
+                             <h6>Round Mirror</h6>
+                             <del class="text-muted">1000 BDT</del>
+                             <b  style="color: rgb(52, 172, 28);">850 BDT<button class="addbtn ml-4" >Add To Cart</button></b>
+                         </div>
+                     </div>
+    
+                     <div class="childtag2">
+                        <div class="imgbody">
+                         <img class="img1" src="s1.jpg" width="60%" height="180px">
+                        </div>
+                         <div class="img2">
+                             <p class="text-muted">Macrame Mirror</p>
+                             <h6>Colorfull Mirror</h6>
+                             <del class="text-muted">1000 BDT</del>
+                             <b  style="color: rgb(52, 172, 28);">850 BDT<button class="addbtn ml-4" >Add To Cart</button></b>
+                         </div>
+                     </div>
+    
+                     <div class="childtag2">
+                        <div class="imgbody">
+                         <img class="img1" src="s2.jpg" width="60%" height="180px">
+                        </div>
+                         <div class="img2">
+                             <p class="text-muted">Macrame Swing</p>
+                             <h6>Macrame Handmade Swing</h6>
+                             <del class="text-muted">2500 BDT</del>
+                             <b  style="color: rgb(52, 172, 28);">2200 BDT<button class="addbtn ml-4" >Add To Cart</button></b>
+                         </div>
+                     </div>
+    
+                     <div class="childtag2">
+                        <div class="imgbody">
+                         <img class="img1" src="s3.jpg" width="60%" height="180px">
+                        </div>
+                         <div class="img2">
+                             <p class="text-muted">Macrame Shelf</p>
+                             <h6>Macrame Wooden Shelf</h6>
+                             <del class="text-muted">1000 BDT</del>
+                             <b  style="color: rgb(52, 172, 28);">800 BDT<button class="addbtn ml-4" >Add To Cart</button></b>
+                         </div>
+                     </div>
+               </div>
+               
+            </div>
+           
+    
+        </div>
+        <br>
+        <!--best selling products-->
+
+        <div class="card-body">
+            <div style="background-color: navajowhite; text-align: center;  font-family: 'Times New Roman', Times, serif;">
+                <h1><marquee>MACRAME BEST SELLER</marquee></h1>
+           </div>
+
+           <!--
+            <div class="parent">
+                <div class="childa">
+                    <div class="bst-sell-img">
+                        <img  class="im2" src="s1.jpg" width="60%" height="180px" >
+                    </div>
+                    <div class="bst-sell">
+                        <p>Macrame Mirror</p>
+                        
+                    </div>
+                </div>
+           </div>
+           -->
+           
+
+
+           <!--demo-->
+
+           <div class="star-img">
+                <div class="rating-css">
+                    <div class="rating-img">
+                        <img src="im-1.jpg" height="150px" width="150px">
+                    </div>
+                    <h5 style=" text-align: center;">Macrame Wall Hanging</h5>
+                    <p style=" text-align: center;">1500 BDT</p>
+                    <div class="star-icon">
+                        <input type="radio" name="rating1" id="rating1">
+                        <label for="rating1"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating2" id="rating2">
+                        <label for="rating2"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating3" id="rating3">
+                        <label for="rating3"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating4" id="rating4">
+                        <label for="rating4"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating5" id="rating5">
+                        <label for="rating5"><ion-icon name="star"></ion-icon></label>
+        
+                    </div>
+                </div>
+
+
+                <div class="rating-css">
+                    <div class="rating-img">
+                        <img src="dc3.jpg" height="150px" width="150px">
+                    </div>
+                    <h5 style="text-align: center;">Macrame Plant Hanger</h5>
+                    <p style="text-align: center;">500 BDT</p>
+                    <div class="star-icon">
+                        <input type="radio" name="rating1" id="rating6">
+                        <label for="rating1"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating2" id="rating7">
+                        <label for="rating2"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating3" id="rating8">
+                        <label for="rating3"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating4" id="rating9">
+                        <label for="rating4"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating5" id="rating10">
+                        <label for="rating5"><ion-icon name="star"></ion-icon></label>
+                    </div>
+
+                </div>
+
+                <div class="rating-css">
+                    <div class="rating-img">
+                        <img src="dc77.jpg" height="150px" width="150px">
+                    </div>
+                    <h5 style=" text-align: center;">Macrame Swing</h5>
+                    <p style=" text-align: center;">3000 BDT</p>
+                    <div class="star-icon">
+                        <input type="radio" name="rating1" id="rating11">
+                        <label for="rating1"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating2" id="rating12">
+                        <label for="rating2"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating3" id="rating13">
+                        <label for="rating3"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating4" id="rating14">
+                        <label for="rating4"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating5" id="rating15">
+                        <label for="rating5"><ion-icon name="star"></ion-icon></label>
+        
+                    </div>
+                </div>
+
+                <div class="rating-css">
+                    <div class="rating-img">
+                        <img src="s3.jpg" height="150px" width="150px">
+                    </div>
+                    <h5 style=" text-align: center;">Macrame Shelf</h5>
+                    <p style=" text-align: center;">1200 BDT</p>
+                    <div class="star-icon">
+                        <input type="radio" name="rating1" id="rating16">
+                        <label for="rating1"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating2" id="rating17">
+                        <label for="rating2"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating3" id="rating18">
+                        <label for="rating3"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating4" id="rating19">
+                        <label for="rating4"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating5" id="rating20">
+                        <label for="rating5"><ion-icon name="star"></ion-icon></label>
+        
+                    </div>
+                </div>
+
+
+                <div class="rating-css">
+                    <div class="rating-img">
+                        <img src="pic_a.jpg" height="150px" width="150px">
+                    </div>
+                    <h5 style=" text-align: center;">Macrame Shelf</h5>
+                    <p style="text-align: center;">1200 BDT</p>
+                    <div class="star-icon">
+                        <input type="radio" name="rating1" id="rating1">
+                        <label for="rating1"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating2" id="rating2">
+                        <label for="rating2"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating3" id="rating3">
+                        <label for="rating3"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating4" id="rating4">
+                        <label for="rating4"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating5" id="rating5">
+                        <label for="rating5"><ion-icon name="star"></ion-icon></label>
+        
+                    </div>
+                </div>
+
+                <div class="rating-css">
+                    <div class="rating-img">
+                        <img src="dc1.jpg" height="150px" width="150px">
+                    </div>
+                    <h5 style="text-align: center;">Macrame Dream Catcher</h5>
+                    <p style="text-align: center;">600 BDT</p>
+                    <div class="star-icon">
+                        <input type="radio" name="rating1" id="rating1">
+                        <label for="rating1"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating2" id="rating2">
+                        <label for="rating2"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating3" id="rating3">
+                        <label for="rating3"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating4" id="rating4">
+                        <label for="rating4"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating5" id="rating5">
+                        <label for="rating5"><ion-icon name="star"></ion-icon></label>
+        
+                    </div>
+                </div>
+
+                <div class="rating-css">
+                    <div class="rating-img">
+                        <img src="dc5.jpg" height="150px" width="150px">
+                    </div>
+                    <h5 style=" text-align: center;">Macrame Plant Hanger (3 pc)</h5>
+                    <p style=" text-align: center;">1000 BDT</p>
+                    <div class="star-icon">
+                        <input type="radio" name="rating1" id="rating1">
+                        <label for="rating1"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating2" id="rating2">
+                        <label for="rating2"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating3" id="rating3">
+                        <label for="rating3"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating4" id="rating4">
+                        <label for="rating4"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating5" id="rating5">
+                        <label for="rating5"><ion-icon name="star"></ion-icon></label>
+        
+                    </div>
+                </div>
+
+                <div class="rating-css">
+                    <div class="rating-img">
+                        <img src="dc7.jpg" height="150px" width="150px">
+                    </div>
+                    <h5 style=" text-align: center;">Macrame Hammock Swing</h5>
+                    <p style=" text-align: center;">2000 BDT</p>
+                    <div class="star-icon">
+                        <input type="radio" name="rating1" id="rating1">
+                        <label for="rating1"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating2" id="rating2">
+                        <label for="rating2"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating3" id="rating3">
+                        <label for="rating3"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating4" id="rating4">
+                        <label for="rating4"><ion-icon name="star"></ion-icon></label>
+                        <input type="radio" name="rating5" id="rating5">
+                        <label for="rating5"><ion-icon name="star"></ion-icon></label>
+        
+                    </div>
+                </div>
+
+         
+           </div>
+
+        </div>
+
+
+    <!--review-->
+    <div class="card-body   client-rvw">
+        <div class="hero mx-auto">
+            <h1>OUR REVIEWS</h1>
+            <div class="review-box">
+                <div id="slide">
+                    <div class="card">
+                        <div class="profile mx-auto round" id="pdiv">
+                           
+                        </div>
+                        <h3 id="t" class="mx-auto">Tabassum</h3>
+                        <h3 id="j" class="mx-auto hdn">Jenny</h3>
+                        <h3 id="s" class="mx-auto hdn">Selina</h3>
+    
+    
+    
+                        <p class="mx-auto" id="web" style="color: rgb(58, 194, 149);">Bangladesh</p>
+                        <p class="mx-auto hdn" id="ux" style="color: rgb(58, 194, 149);">Florida</p>
+                        <p class="mx-auto hdn" id="design" style="color: rgb(58, 194, 149);">Norway</p>
+    
+                        <div class="italic-text text-center">
+                            <div id="tabassum">
+                                <span style="font-size: 20px; color: chocolate; "><ion-icon name="star"></ion-icon></span>
+                                <span style="font-size: 20px; color: chocolate; "><ion-icon name="star"></ion-icon></span>
+                                <span style="font-size: 20px; color: chocolate;"><ion-icon name="star"></ion-icon></span>
+                                <span style="font-size: 20px; color: chocolate;"><ion-icon name="star"></ion-icon></span>
+                                <span style="font-size: 20px; color: chocolate;"><ion-icon name="star"></ion-icon></span>
+                                <p>I really like this shop to make nice gifts in macrame. There is a lot of choice, I have already few items. I am very satisfied each time. <br> The quality is perfect.</p>
+                            </div>
+        
+                            <div id="jenny" class="hdn">
+                                <span style="font-size: 20px; color: chocolate; "><ion-icon name="star"></ion-icon></span>
+                                <span style="font-size: 20px; color: chocolate; "><ion-icon name="star"></ion-icon></span>
+                                <span style="font-size: 20px; color: chocolate;"><ion-icon name="star"></ion-icon></span>
+                                <span style="font-size: 20px; color: chocolate;"><ion-icon name="star"></ion-icon></span>
+                                <span style="font-size: 20px; color: chocolate;"><ion-icon name="star"></ion-icon></span>
+                                <p>Always a very good choice of macrame products, fact delivery, perfect packaging! I've been ordering <br> from Boho Decor Studio for a long time now, never disappointed, so I'll continue! Thank you to all <br> your team.</p>
+                            </div>
+        
+                            <div id="selina" class="hdn">
+                                <span style="font-size: 20px; color: chocolate; "><ion-icon name="star"></ion-icon></span>
+                                <span style="font-size: 20px; color: chocolate; "><ion-icon name="star"></ion-icon></span>
+                                <span style="font-size: 20px; color: chocolate;"><ion-icon name="star"></ion-icon></span>
+                                <span style="font-size: 20px; color: chocolate;"><ion-icon name="star"></ion-icon></span>
+                                <span style="font-size: 20px; color: chocolate;"><ion-icon name="star"></ion-icon></span>
+                                <p>Very serious website. The macrame I bought is perfect and and is 100% matching to the description. I <br> definity recommend it.</p>
+                            </div>
+        
+                    
+                        </div>
+                        
+    
+                    </div>
+    
+                
+    
+                </div>
+    
+                
+                <div class="slideicon  ">
+                    <span><ion-icon name="chevron-back-outline" class="pointer" onclick="cngbackimg()"></ion-icon></span>
+                    <span><ion-icon name="chevron-forward-outline" class="pointer" onclick="cngimg()"></ion-icon></span>
+        
+                </div>
+    
+             
+            </div>
+    
+           
+        </div>
+    
+        
+        
+       
+      
+    </div>
+
+
+
+    
+    
+    
+    
+</body>
+</html>

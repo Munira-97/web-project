@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Site</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+.top-bar{
+    background-color:  rgb(226, 207, 178);
+    height: 30px;
+}
+.fb{
+    color: rgb(99, 99, 99);
+}
+.insta{
+    color: rgb(99, 99, 99) ;
+}
+.email{
+    color: rgb(99, 99, 99) ;
+}
+.git{
+    color: rgb(99, 99, 99) ;
+}
+.fb:hover{
+    color: black;
+}
+.insta:hover{
+    color: black;
+}
+.email:hover{
+    color: black;
+}
+.git:hover{
+    color: black;
+}
+.section-a{
+  
+}
+.sticky{
+   
+    position: sticky;
+    top: 0px;
+    background-color:  rgb(255, 255, 255);
+   
+}
+.abc{
+  
+    
+    
+    display: flex;
+    height: 120px;
+    justify-content: space-around;
+    align-items: center;
+}
+form{
+    width: 200px;
+    height: 40px;
+    border-radius: 20px 20px 20px 20px;
+   
+    position: relative;
+
+    top: 0px;
+    border: 1px solid;
+
+}
+#srch{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    
+}
+.srch_in{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+    border: none;
+    padding: 8px 40px 8px 3px;
+}
+.srch_in:focus{
+    outline: none;
+}
+#shop{
+   
+    text-decoration: none;
+}
+#blog{
+    text-decoration: none;
+    
+    
+}
+#login{
+   text-decoration: none;
+ 
+   
+}
+#cart{
+    text-decoration: none;
+ 
+}
+#logo{
+   
+    height: 120px;
+}
+
+
+
+/* navigation menu */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  
+  }
+  
+  
+  /* navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  
+   
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* close button style */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+/* new */
+  .card{
+    width: 50%;
+    height: 30%;
+    margin-left: 25%;
+  }
+
+  .Q{
+    font-size: 15px;
+
+  }
+
+  
+
+    </style>
+</head>
+<body>
+     <div class="top-bar d-flex">
+        <p class="text-muted"><b>Free Delivery Over 3000</b></p>
+
+        <span class=" ml-auto my-auto" style="justify-content: space-around;">
+            <a class="fb ml-2" href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a class="insta ml-2" href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a class="email ml-2" href="#"><ion-icon name="mail-outline"></ion-icon></a>
+            <a class="git ml-2" href="#"><ion-icon name="logo-github"></ion-icon></a>
+            
+        </span>
+
+    </div>
+
+    
+        
+        <div class="border">
+            <div class="abc">
+               <!--
+                <div style="font-size: 40px;" class="my-auto">
+                    
+                    <ion-icon name="menu-outline" ></ion-icon>
+                </div>
+               --> 
+
+                             
+                <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn"  onclick="closeNav()">&times;</a>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+                </div>
+
+                <!-- open the sidenav -->
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+
+
+
+ 
+                <form style="margin-left: 10px;">
+                    <input class="srch_in" type="text" placeholder="Searech">
+                    <button id="srch" type="submit" aria-hidden="true"><ion-icon name="search-outline"></ion-icon></button>
+                </form>
+                
+                <div class="ml-2">
+                <a id="shop" href="#">SHOP
+                    <span><ion-icon name="caret-down-outline"></ion-icon></span>
+                   </a>
+    
+                </div>
+    
+                <div  >
+                    <a id="blog" href="#" >BLOG
+                     <span><ion-icon name="caret-down-outline"></ion-icon></span>
+                    </a>
+                </div>
+    
+                    <!--brand logo-->
+    
+                <img class="mx-auto" id="logo" src="boho-s-removebg-preview.png" alt="">
+    
+                <div class="d-flex ml-auto">
+                    <div class="mr-2">
+                        <a id="login" href="#">LOGIN</a>
+                    </div>
+        
+                    <div class="mr-1">
+                        <a id="cart" href="#">CART 
+                        <span><ion-icon name="cart-outline"></ion-icon></span>
+                        </a>
+                    </div>
+                </div>
+                        <hr>
+    
+            </div>
+        </div>
+
+        <br>
+
+    <!--new-->
+
+ <div class="card " style="border: none;">
+
+    <h3 class="text-center">
+        Is macrame trendy in 2021?
+        </h3>
+    
+             <img class="mx-auto"  src="photo.jpg" alt=""> 
+             <br>
+
+        <P class="Q">Macrame is having a comeback, big time. Maybe its because of the recent bohemian trend,
+            or because it has such an authentic handmade feel to it, or maybe it's just time for the trend to resurface,
+            but whatever the reason, this hand knotted textile is everywhere. </P>
+
+        <br>
+        <br>
+    <h3 class="text-center">
+         Is macrame coming back in style?
+        </h3>
+
+            <img class="mx-auto" src="photo 2.webp" alt=""> 
+        <br>
+        <p class="Q">
+
+            The good news is, macrame is definitely still on trend and can be worked into a stylish interior in SO MANY ways. 
+            And also - it's art! Art is always in style, even if the intricacies change a little. So, I've scoured the trend reports for 2023
+                </p>
+            <br>
+            <br>
+
+   <h3 class="text-center">
+      What is macrame most popular product?
+      </h3>
+
+        <img class="mx-auto" src="photo 3.webp" alt=""> 
+      <br>
+       <P class="Q"> Wall hangings are one of the most popular macrame products. They come in various sizes and designs,
+             and they can add a bohemian touch to any room.
+              Macrame Wall Hangings are intricate handcrafted pieces of art made using the technique of macrame.</P>
+
+        <br>
+        <br>
+     <h3 class="text-center">
+
+        What can I make using macrame?
+          </h3>
+ 
+            <img class="mx-auto" src="photo 4.webp" alt=""> 
+            <br>
+        <P class="Q">You won't believe all the amazing things you can make with Macrame! Choose from fashionable handbags and earrings,
+              or functional projects like hat hangers, toy hammocks, and plant hangers. </P>
+            <br>
+            <br>
+
+
+     <h3 class="text-center">
+        Is macrame a fad?
+       </h3>
+ 
+        <img class="mx-auto" src="photo 5.webp" alt=""> 
+        <br>
+        <P class="Q">
+           The good news is, macrame is definitely still on trend and can be worked into a stylish interior in SO MANY ways.
+           And also - it's art! Art is always in style, even if the intricacies change a little.</P>
+
+        <br>
+        <br>
+
+
+ </div>
+
+
+
+ 
+
+
+ <script>
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+ </script>
+
+    
+</body>
+</html>
